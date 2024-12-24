@@ -1,11 +1,3 @@
-.backgroundPattern {
-  background-color: var(--main-yellow);
-  background-image: url("public/backgroundPattern.png");
-  background-blend-mode: overlay;
-  background-size: cover;
-  height: 100%;
-}
-
 body {
   margin: 0;
   line-height: 1.5;
