@@ -32,11 +32,12 @@ article {
     strong {
       font-size: 28px;
     }
-    ol {
+    ul {
       font-size: 22px;
       padding-left: 24px;
       margin: 0px;
       margin-top: 20px;
+      list-style-type: decimal;
     }
   }
 
