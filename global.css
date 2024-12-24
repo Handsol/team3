@@ -1,9 +1,7 @@
-html {
-  background-color: var(--main-yellow);
-  background-image: url("public/backgroundPattern.png");
-  background-blend-mode: overlay;
-  background-size: cover;
-  height: 100%;
+body {
+  margin: 0;
+  line-height: 1.5;
+  letter-spacing: -0.05em;
 }
 
 :root {
@@ -15,9 +13,6 @@ html {
   --main-blue: #5588c6;
   --main-grey: #4a4a4a;
   --main-black: #333333;
-
-  letter-spacing: -5%;
-  line-height: 150%;
 }
 
 @font-face {
