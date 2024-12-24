@@ -1,0 +1,59 @@
+@import url(../../global.css);
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100vW;
+    /* 가로로 화면 꽉채우기 */
+    background: white;
+    border-bottom: solid 1px #5F5959;
+}
+
+.headerTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid 1px #F1F3F5;
+}
+
+.headerLogo {
+    width: 250px;
+
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* 하이퍼링크에 자동적용되는 밑줄 파란글자 스타일 제거 */
+
+.headerBottom {
+    height: 100px;
+}
+
+.headerBottom .nav {
+    font-weight: 600;
+    font-size: 24px;
+    justify-content: center;
+    gap: 120px;
+    height: 100%;
+
+    list-style-type: none;
+    /* 네비게이션 바에 사용한 리스트 스타일 제거 */
+    padding: 0;
+    /* ul에 기본적으로 적용된 padding 제거 */
+    margin: 0;
+    /* ul에 기본적으로 적용된 margin 제거 */
+
+    display: flex;
+    /* 요소를 block으로 바꿔줌 */
+    flex-direction: row;
+    /* 가로 좌측정렬 */
+    align-items: center;
+    /* 요소 중앙정렬 */
+    width: 100%;
+}
