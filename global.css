@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  line-height: 1.5;
+  letter-spacing: -0.05em;
+}
+
+:root {
+  font-family: "Pretendard", Arial, sans-serif;
+
+  --main-yellow: #f7efb0;
+  --main-green: #55b073;
+  --main-red: #f5695a;
+  --main-blue: #5588c6;
+  --main-grey: #4a4a4a;
+  --main-black: #333333;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff")
+    format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff")
+    format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
