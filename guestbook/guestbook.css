@@ -1,0 +1,174 @@
+@import url(../global.css);
+
+/* =====guestbook======= */
+main,
+section,
+h2,
+div,
+p,
+span,
+ul,
+li,
+textarea,
+input,
+button {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.displaynone {
+  display: none;
+}
+
+html {
+  background-color: var(--main-yellow);
+  background-image: url("../public/backgroundPattern.png");
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.guestbook .contPostArea {
+  width: 65%;
+  max-width: 1260px;
+  min-width: 768px;
+  min-height: 740px;
+  background-color: #fefefe;
+  margin: 72px auto 24px;
+  padding: 38px 8%;
+  border: solid 1px #5f5959;
+  border-radius: 20px;
+}
+
+.guestbook h2 {
+  margin: 0 0 30px;
+  font-size: 32px;
+  letter-spacing: -0.03em;
+}
+
+.guestbook .post {
+  width: 100%;
+  background-color: #f5f5f4;
+  border-radius: 12px;
+  padding: 20px;
+}
+.guestbook .post + .post {
+  margin-top: 30px;
+}
+.guestbookContent {
+  position: relative;
+  width: 100%;
+}
+
+.guestbook .profile {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  background: url(../public/profileImg.png) no-repeat 50% 0 / contain;
+}
+.guestbook .contTop,
+.guestbook .contTopBox {
+  display: flex;
+  color: #808080;
+}
+.guestbook .contTop {
+  align-items: center;
+  border-bottom: solid 1px #d4d4d4;
+  padding-bottom: 10px;
+}
+.guestbook .contTopBox {
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.guestbook .contTopBox .postInfo {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.guestbook .contTopBox .postInfo .userName {
+  font-size: 16px;
+}
+.guestbook .contTopBox .postInfo .postDate {
+  font-size: 12px;
+}
+.guestbook .contTopBox [class^="btn"] {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: "Pretendard", Arial, sans-serif;
+  font-size: 12px;
+  color: #808080;
+  height: 100%;
+  margin-right: 8px;
+}
+.guestbook .contTopBox .btnSave {
+  font-weight: 700;
+}
+
+.guestbook .contBottom {
+  padding: 24px 0 0 6%;
+  color: var(--main-black);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.guestbook .contInputArea {
+  width: 65%;
+  max-width: 1260px;
+  min-width: 768px;
+  margin: 0 auto 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.guestbook .contInputArea #postInput {
+  resize: none;
+  outline: none;
+  font-family: "Pretendard", Arial, sans-serif; /* textarea 속성 초기화*/
+  padding: 20px 26px;
+  border: solid 1px #4a67f0;
+  border-radius: 14px;
+  flex: 13;
+  height: 76px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--main-black);
+}
+.guestbook .contInputArea #postInput::placeholder {
+  color: var(--main-black);
+  line-height: 1.5;
+  height: auto;
+}
+.guestbook .contInputArea button {
+  flex: 1;
+  border: none;
+  height: 76px;
+  padding: 18px;
+  cursor: pointer;
+  background-color: #4a67f0;
+  color: #ffffff;
+  border-radius: 12px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Pretendard", Arial, sans-serif;
+}
+
+.guestbook .defaultText {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.guestbook .editText {
+  resize: none;
+  outline: none;
+  font-family: "Pretendard", Arial, sans-serif;
+  width: 90%;
+  border: solid 1px #4a67f0;
+  padding: 8px 12px 0;
+}
