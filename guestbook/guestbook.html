@@ -20,8 +20,12 @@
         getDocs,
         serverTimestamp,
         doc,
+        onSnapshot,        
+        query, 
+        orderBy,
       } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
       import { db } from "../config/firebaseConfig.js";
+      import {  updateContentCount } from "./guestbook.js";
 
       // 데이터 추가
       $("#btnAdd").click(async function (e) {
@@ -35,32 +39,47 @@
           });
 
           alert("작성이 완료되었습니다.");
-          window.location.reload();
+          //window.location.reload(); 이 부분 수정 필요
+          loadGuestbookPosts();
         } catch (e) {
           console.error("Error adding document: ", e);
         }
       });
 
-      $(".guestbookContent ul").empty();
+      function loadGuestbookPosts() {
+        
+        // Firestore에서 데이터를 실시간으로 불러오기
+        const querySnapshot = query(
+          collection(db, "guestbooks"),
+          orderBy("createdAt", "desc")
+        );
+        
+        // 데이터를 실시간으로 불러오고 화면에 표시
+        onSnapshot(querySnapshot, (snapshot) => {
+          $(".guestbookContent").empty();
 
-      // 데이터 가져오기
-      const querySnapshot = await getDocs(collection(db, "guestbooks"));
+          snapshot.forEach((doc) => {
+            let contText = doc.data().contText;
+            let createdAt = doc.data().createdAt?.toDate(); // Firestore Timestamp를 JavaScript Date로 변환
 
-      querySnapshot.forEach((doc) => {
-        let contText = doc.data().contText;
-        let createdAt = doc.data().createdAt?.toDate(); // Firestore Timestamp를 JavaScript Date로 변환
+            const postElement = document.createElement("guestbook-post");
+            postElement.setAttribute("id", doc.id);
+            postElement.setAttribute("class", "post");
+            postElement.setAttribute("cont-text", contText);
+            postElement.setAttribute("created-at", createdAt);
 
-        const postElement = document.createElement("guestbook-post");
+            document
+              .querySelector(".guestbookContent")
+              .appendChild(postElement);
+          });
 
-        postElement.setAttribute("id", doc.id);
-        postElement.setAttribute("class", "guestbookPost");
-        postElement.setAttribute("cont-text", contText);
-        postElement.setAttribute("created-at", createdAt);
-
-        document.querySelector(".guestbookContent ul").appendChild(postElement);
+          // 업데이트된 데이터 갯수 확인
+          updateContentCount();
+        });
+      }
+      $(document).ready(function () {
+        loadGuestbookPosts();
       });
-
-      updateContentCount();
     </script>
   </head>
 
@@ -70,9 +89,7 @@
         <h2>방명록&#40;<span class="countForPosts"></span>&#41;</h2>
         <p class="defaultText displaynone">작성된 글이 없습니다.</p>
 
-        <div class="guestbookContent">
-          <ul></ul>
-        </div>
+        <div class="guestbookContent"></div>
       </div>
       <form class="contInputArea">
         <textarea
@@ -84,6 +101,6 @@
       </form>
     </main>
 
-    <script src="./guestbook.js"></script>
+    <!-- <script src="./guestbook.js"></script> -->
   </body>
 </html>
