@@ -18,22 +18,15 @@
 
 .bigSize {
   font-size: 26px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .main {
   position: relative;
-  height: 55vh;
   width: 100%;
-
+  min-height: 800px;
   background: url("../public/짱구집.png") center bottom/cover no-repeat;
   overflow: hidden;
-}
-
-.wrap {
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
 }
 
 .infoCircle {
@@ -71,50 +64,46 @@
   left: 50%;
   transform: translateX(-50%);
 
-  width: 880px;
-  height: 275px;
-  padding: 50px;
+  box-sizing: border-box;
+  width: 1000px;
+  min-height: 360px;
+  padding: 44px;
 
   background-color: #fcfcfc;
   border-radius: 30px;
-  float: left;
 }
 
 .profileImg {
-  position: absolute;
-  top: 50px;
-  left: 50px;
-
   width: 200px;
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-
-  float: left;
 }
 
 .closeBtn {
+  position: absolute;
+  right: 55px;
   cursor: pointer;
-  color: #fcfcfc;
-  width: fit-content;
-  padding: 5px 10px;
-  border-radius: 50%;
-  background-color: #aaa;
-  float: right;
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+.closeBtn img {
+  width: 100%;
 }
 
 .clickBlogContainer {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 24px;
 
-  position: absolute;
-  bottom: 50px;
-  left: 30%;
   color: #333333;
 }
-
+.clickBlogContainer p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
 .dots {
   height: 4px;
   width: 16px;
@@ -125,25 +114,26 @@
 }
 
 #modalContent {
-  position: absolute;
-  top: 30%;
-  left: 30%;
-  transform: translateY(-30%);
   max-width: 650px;
 
   font-size: 22px;
   text-align: left;
   color: #333333;
+  font-weight: 600;
 }
 
 #modal {
-  margin-left: 50px;
+  display: flex;
+  gap: 44px;
 }
-
+.modalContRight {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 48px;
+}
 .character img {
-  margin: 0 auto;
-  width: 300px;
-  border: none;
+  width: 100%;
 }
 
 #dog img {
@@ -171,7 +161,11 @@
 
 .allCharacters {
   position: absolute;
-  width: max-content;
+  width: 70%;
+  min-width: 1000px;
+  max-width: 1500px;
+  display: flex;
+  align-items: center;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -179,12 +173,26 @@
 
 .character {
   position: relative;
+  flex: 1;
   background: none;
   border: none;
   margin: auto;
   cursor: pointer;
 }
-
-.character:hover .hoverImg {
+/* 가상 요소 생성 - 말풍선 */
+.character::before {
+  display: none;
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  background: url(../public/hover-image.png) no-repeat 0 0 / contain;
+  opacity: 50%;
+}
+/* hover 시 노출 */
+.character:hover::before {
   display: block;
 }

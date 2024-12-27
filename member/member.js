@@ -13,8 +13,8 @@ const memberinfos = [
     hobby: "게임",
     spec: "스몰톡",
     like: "개구리",
-    color: "#FFF1CE 옅은 노랑색",
-    Img: "../public/profileJiyoon.png",
+    color: "#FFF1CE 옅은 노란색",
+    Img: "./public/profileJiyoon.png",
     velog: "https://velog.io/@jiyunk/posts",
     github: "https://github.com/jiyxxn",
   },
@@ -24,8 +24,8 @@ const memberinfos = [
     hobby: "게임-Stardew Valley",
     spec: "멍 때리기",
     like: "고양이",
-    color: "#64B5F6-하늘색과 파랑색의 중간 톤",
-    Img: "../public/profileDaeun.jpg",
+    color: "#64B5F6-하늘색과 파란색의 중간 톤",
+    Img: "./public/profileDaeun.jpg",
     velog: "https://llddang-blog.tistory.com/",
     github: "https://github.com/llddang",
   },
@@ -36,7 +36,7 @@ const memberinfos = [
     spec: "밤새기",
     like: "병아리",
     color: "노란색",
-    Img: "../public/profileSumin.jpg",
+    Img: "./public/profileSumin.jpg",
     velog: "https://velog.io/@suminlee0409/series",
     github: "https://github.com/Sumin-Lee12/username.github.io",
   },
@@ -47,7 +47,7 @@ const memberinfos = [
     spec: "잠자기",
     like: "해파리",
     color: "검정색",
-    Img: "../public/profileHansol.jpg",
+    Img: "./public/profileHansol.jpg",
     velog: "https://sol09-29.tistory.com/",
     github: "https://github.com/Handsol",
   },
@@ -60,7 +60,7 @@ characters.forEach(function (button, i) {
     modalContent.innerHTML = `안녕하세요! 저는 <span class="bigSize highlight">${memberinfos[i].name}</span>입니다.<br />
         저의 MBTI는 <span class="bigSize">${memberinfos[i].mbti}</span> 입니다.<br />
         저의 취미는 <span class="bigSize">${memberinfos[i].hobby}</span>이고, 특기는 <span class="bigSize">${memberinfos[i].spec}</span> 입니다.<br />
-        <span class="bigSize">${memberinfos[i].like}</span>을(를) 좋아하고, 좋아하는 색깔은 <span class="bigSize">${memberinfos[i].color}</span>입니다.`;
+        <span class="bigSize">${memberinfos[i].like}</span>를 좋아하고, 좋아하는 색깔은 <span class="bigSize">${memberinfos[i].color}</span>입니다.`;
 
     blogLinks.href = memberinfos[i].github || "#";
     velogLinks.href = memberinfos[i].velog || "#";
