@@ -1,0 +1,210 @@
+@import url(../global.css);
+@keyframes move {
+  0% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 10px;
+  }
+}
+
+.displaynone {
+  display: none;
+}
+
+#highlight {
+  box-shadow: inset 0 -10px 0 #fff2a6;
+}
+
+.bigSize {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.main {
+  position: relative;
+
+  display: inline-block;
+  padding: auto;
+  margin: 0 auto;
+
+  text-align: center;
+  align-items: center;
+
+  height: 825px;
+  width: 100%;
+
+  background-image: url("../public/짱구집.png");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.wrap {
+  height: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#infoCircle {
+  width: 30px;
+  margin-right: 12px;
+}
+
+#instruction {
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 350px;
+  height: 50px;
+
+  border: none;
+  color: #333333;
+  background-color: #fcfcfc;
+  border-radius: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation: move 0.7s ease-in 0s infinite alternate;
+  margin-top: 0;
+
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#modalContainer {
+  position: absolute;
+
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 880px;
+  height: 275px;
+  padding: 50px;
+
+  background-color: #fcfcfc;
+  border-radius: 30px;
+  float: left;
+}
+
+#profileImg {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  float: left;
+}
+
+.closeBtn {
+  cursor: pointer;
+  color: #fcfcfc;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: #aaa;
+  float: right;
+}
+
+#clickBlog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  position: absolute;
+  bottom: 50px;
+  left: 30%;
+  color: #333333;
+}
+
+#dots {
+  height: 4px;
+  width: 16px;
+}
+
+#github {
+  width: auto;
+  height: 30px;
+}
+
+#velog {
+  width: auto;
+  height: 30px;
+}
+
+#modalContent {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translateY(-30%);
+  max-width: 650px;
+
+  font-size: 22px;
+  text-align: left;
+  color: #333333;
+}
+
+#modal {
+  margin-left: 50px;
+}
+
+.character img {
+  margin: 0 auto;
+  width: 300px;
+  border: none;
+}
+
+#dog img {
+  width: 250px;
+}
+
+#Chulsoo {
+  transform: scaleX(-1);
+}
+
+.hoverImg {
+  display: none; /* 기본적으로 안 보이게 함 */
+  position: absolute;
+  bottom: 62%;
+  left: 30%;
+  transform: translateX(-30%);
+  scale: 25%;
+  pointer-events: none;
+  opacity: 50%;
+}
+
+#puppyHover {
+  bottom: 50%;
+}
+
+.allCharacters {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.character {
+  position: relative;
+  background: none;
+  border: none;
+  margin: auto -10px;
+  cursor: pointer;
+}
+
+.character:hover .hoverImg {
+  display: block;
+}
