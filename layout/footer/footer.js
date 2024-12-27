@@ -18,8 +18,8 @@ class CustomFooter extends HTMLElement {
             </div>
             <div class="footerBottom">
                 <ul>
-                    <li>멤버: 김승민 / 김지윤 / 이다은 / 이수민 / 이한솔</li>
-                    <li>작업기간: 2024. 12. 23 ~ 2024. 12. 26</li>
+                    <li>멤버: 김지윤 / 이다은 / 이수민 / 이한솔</li>
+                    <li>작업기간: 2024. 12. 23 ~ 2024. 12. 27</li>
                 </ul>
             </div>
         </footer>
