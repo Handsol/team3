@@ -18,8 +18,8 @@ class CustomHeader extends HTMLElement {
         <div class="headerBottom">
             <ul class="nav">
                 <li><a href="./index.html">내배캠 방범대</a></li>
-                <li><a href="./member/member.html">방범대원 소개</a></li>
-                <li><a href="./guestbook/guestbook.html">방범 일지</a></li>
+                <li><a href="./member.html">방범대원 소개</a></li>
+                <li><a href="./guestbook.html">방범 일지</a></li>
             </ul>
             <audio class="audio" controls loop src="./public/bgm.mp3">
         </div>
