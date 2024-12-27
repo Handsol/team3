@@ -12,16 +12,16 @@ class CustomHeader extends HTMLElement {
       <header class="header">
         <div class="headerTop">
             <h1>
-                <img src="../../public/logo.png" class="headerLogo">
+                <img src="./public/logo.png" class="headerLogo">
             </h1>
         </div>
         <div class="headerBottom">
             <ul class="nav">
-                <li><a href="../../index.html">내배캠 방범대</a></li>
-                <li><a href="../../member/member.html">방범대원 소개</a></li>
-                <li><a href="../../guestbook/guestbook.html">방범 일지</a></li>
+                <li><a href="./index.html">내배캠 방범대</a></li>
+                <li><a href="./member/member.html">방범대원 소개</a></li>
+                <li><a href="./guestbook/guestbook.html">방범 일지</a></li>
             </ul>
-            <audio class="audio" controls loop src="../../public/bgm.mp3">
+            <audio class="audio" controls loop src="./public/bgm.mp3">
         </div>
       </header>
     `;

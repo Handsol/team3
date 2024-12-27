@@ -10,7 +10,7 @@ class CustomFooter extends HTMLElement {
         <link rel="stylesheet" href="layout/footer/footer.css" />
         <footer>
             <div class="footerTop">
-                <img src="../../public/logo.png" class="footerLogo">
+                <img src="./public/logo.png" class="footerLogo">
                 <div class="link">
                     <a href="https://github.com/Handsol/team3.git"><img src="../../public/Vector.png"></a>
                     <a href="https://sugar-lamprey-c14.notion.site/03-3-165d2bdba92980cc9099e3a39d0d799f?pvs=4"><img src="../../public/notion-icon 1.png"></a>
