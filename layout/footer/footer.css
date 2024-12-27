@@ -8,18 +8,15 @@ body {
 footer {
     width: 100vw;
     background-color: #484747;
-    position: fixed;
-    bottom: 0;
     height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+}   /* position: fixed 삭제 - 하단에 계속 고정시킬 것이 아니기 때문에 필요 없음 */
 
 .footerTop {
     display: flex;
-    flex-direction: row;
     align-items: center;
     border-bottom: solid 1px #333333;
     justify-content: space-between;
@@ -39,7 +36,8 @@ footer {
 
 .footerBottom {
     display: flex;
-    flex-direction: row;
     width: 1260px;
     color: #939393;
 }
+
+
