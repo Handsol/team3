@@ -30,6 +30,7 @@ html {
 }
 
 .guestbook .contPostArea {
+  position: relative;
   width: 65%;
   max-width: 1260px;
   min-width: 768px;

@@ -5,7 +5,7 @@ import {
   query,
   orderBy,
 } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
-import { db } from "../config/firebaseConfig.js";
+import { db } from "./../config/firebaseConfig.js";
 
 // guestbook 데이터를 실시간으로 불러오는 함수
 export function loadGuestbookPosts() {
