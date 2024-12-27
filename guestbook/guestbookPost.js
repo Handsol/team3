@@ -4,7 +4,7 @@ import {
   deleteDoc,
   doc,
 } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
-import { db } from "../config/firebaseConfig.js";
+import { db } from "./../config/firebaseConfig.js";
 import { loadGuestbookPosts, updateContentCount } from "./guestbook.js";
 
 class GuestbookPost extends HTMLElement {
