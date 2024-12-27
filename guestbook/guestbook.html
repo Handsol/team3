@@ -20,12 +20,12 @@
         getDocs,
         serverTimestamp,
         doc,
-        onSnapshot,        
-        query, 
+        onSnapshot,
+        query,
         orderBy,
       } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
       import { db } from "../config/firebaseConfig.js";
-      import {  updateContentCount } from "./guestbook.js";
+      import { updateContentCount } from "./guestbook.js";
 
       // 데이터 추가
       $("#btnAdd").click(async function (e) {
@@ -39,7 +39,6 @@
           });
 
           alert("작성이 완료되었습니다.");
-          //window.location.reload(); 이 부분 수정 필요
           loadGuestbookPosts();
         } catch (e) {
           console.error("Error adding document: ", e);
@@ -47,13 +46,12 @@
       });
 
       function loadGuestbookPosts() {
-        
         // Firestore에서 데이터를 실시간으로 불러오기
         const querySnapshot = query(
           collection(db, "guestbooks"),
           orderBy("createdAt", "desc")
         );
-        
+
         // 데이터를 실시간으로 불러오고 화면에 표시
         onSnapshot(querySnapshot, (snapshot) => {
           $(".guestbookContent").empty();
@@ -77,16 +75,17 @@
           updateContentCount();
         });
       }
+
       $(document).ready(function () {
         loadGuestbookPosts();
       });
     </script>
   </head>
-
   <body>
+    <custom-header></custom-header>
     <main class="guestbook">
       <div class="contPostArea">
-        <h2>방명록&#40;<span class="countForPosts"></span>&#41;</h2>
+        <h2>방명록(<span class="countForPosts"></span>)</h2>
         <p class="defaultText displaynone">작성된 글이 없습니다.</p>
 
         <div class="guestbookContent"></div>
@@ -100,7 +99,6 @@
         <button id="btnAdd" type="submit">저장</button>
       </form>
     </main>
-
-    <!-- <script src="./guestbook.js"></script> -->
+    <custom-footer></custom-footer>
   </body>
 </html>

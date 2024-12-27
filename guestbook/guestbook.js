@@ -1,11 +1,19 @@
 // guestbook.js
-import { collection, onSnapshot, query, orderBy } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+import {
+  collection,
+  onSnapshot,
+  query,
+  orderBy,
+} from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
 import { db } from "../config/firebaseConfig.js";
 
 // guestbook 데이터를 실시간으로 불러오는 함수
 export function loadGuestbookPosts() {
   // Firestore에서 데이터를 실시간으로 불러오기
-  const guestbookQuery = query(collection(db, "guestbooks"), orderBy("createdAt", "desc"));
+  const guestbookQuery = query(
+    collection(db, "guestbooks"),
+    orderBy("createdAt", "desc")
+  );
 
   // 데이터를 실시간으로 불러오고 화면에 표시
   onSnapshot(guestbookQuery, (snapshot) => {
@@ -31,7 +39,9 @@ export function loadGuestbookPosts() {
 
 // ** 방명록 글 개수 카운트하는 함수
 export function updateContentCount() {
-  let contentCount = document.querySelectorAll(".guestbookContent .post").length;
+  let contentCount = document.querySelectorAll(
+    ".guestbookContent .post"
+  ).length;
   const defaultText = document.querySelector(".defaultText"); // 작성된 글이 없습니다.
   let countForPosts = document.querySelector(".countForPosts");
 
@@ -42,7 +52,6 @@ export function updateContentCount() {
 
   // ** 방명록 글 개수 카운트 **
   countForPosts.innerText = contentCount;
-  
 }
 
 window.onload = function () {
