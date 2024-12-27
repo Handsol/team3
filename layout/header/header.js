@@ -12,7 +12,7 @@ class CustomHeader extends HTMLElement {
       <header class="header">
         <div class="headerTop">
             <h1>
-                <img src="./public/logo.png" class="headerLogo">
+                <a href="./index.html"><img src="./public/logo.png" class="headerLogo"></a>
             </h1>
         </div>
         <div class="headerBottom">
