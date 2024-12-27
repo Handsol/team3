@@ -1,5 +1,5 @@
 @import url(../global.css);
-@keyframes move {
+@keyframes characterAniMove {
   0% {
     margin-top: 0px;
   }
@@ -12,7 +12,7 @@
   display: none;
 }
 
-#highlight {
+.highlight {
   box-shadow: inset 0 -10px 0 #fff2a6;
 }
 
@@ -23,46 +23,33 @@
 
 .main {
   position: relative;
-
-  display: inline-block;
-  padding: auto;
-  margin: 0 auto;
-
-  text-align: center;
-  align-items: center;
-
-  height: 825px;
+  height: 55vh;
   width: 100%;
 
-  background-image: url("../public/짱구집.png");
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
+  background: url("../public/짱구집.png") center bottom/cover no-repeat;
   overflow: hidden;
 }
 
 .wrap {
-  height: 100vw;
-  display: flex;
+  height: 100vh;
   align-items: center;
   justify-content: center;
 }
 
-#infoCircle {
+.infoCircle {
   width: 30px;
   margin-right: 12px;
 }
 
-#instruction {
+.instruction {
   position: absolute;
-  top: 220px;
+  top: 30%;
   left: 50%;
   transform: translateX(-50%);
 
   width: 350px;
   height: 50px;
 
-  border: none;
   color: #333333;
   background-color: #fcfcfc;
   border-radius: 100px;
@@ -71,7 +58,7 @@
   justify-content: center;
   align-items: center;
 
-  animation: move 0.7s ease-in 0s infinite alternate;
+  animation: characterAniMove 0.7s ease-in 0s infinite alternate;
   margin-top: 0;
 
   font-size: 24px;
@@ -80,8 +67,7 @@
 
 #modalContainer {
   position: absolute;
-
-  top: 20px;
+  top: 3%;
   left: 50%;
   transform: translateX(-50%);
 
@@ -94,7 +80,7 @@
   float: left;
 }
 
-#profileImg {
+.profileImg {
   position: absolute;
   top: 50px;
   left: 50px;
@@ -117,7 +103,7 @@
   float: right;
 }
 
-#clickBlog {
+.clickBlogContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,18 +115,12 @@
   color: #333333;
 }
 
-#dots {
+.dots {
   height: 4px;
   width: 16px;
 }
 
-#github {
-  width: auto;
-  height: 30px;
-}
-
-#velog {
-  width: auto;
+.blogIcon {
   height: 30px;
 }
 
@@ -191,7 +171,7 @@
 
 .allCharacters {
   position: absolute;
-  width: 100%;
+  width: max-content;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -201,7 +181,7 @@
   position: relative;
   background: none;
   border: none;
-  margin: auto -10px;
+  margin: auto;
   cursor: pointer;
 }
 

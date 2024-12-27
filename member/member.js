@@ -1,21 +1,12 @@
-const openButton = document.querySelectorAll(".character");
+const characters = document.querySelectorAll(".character");
 const container = document.querySelector("#modalContainer");
 const closeButton = document.querySelector(".closeBtn");
 const modalContent = document.getElementById("modalContent");
-const blogLinks = document.getElementById("blogLink");
-const velogLinks = document.getElementById("velogLink");
-const profileImg = document.getElementById("profileImg");
+const blogLinks = document.querySelector(".blogLink");
+const velogLinks = document.querySelector(".velogLink");
+const profileImg = document.querySelector(".profileImg");
 
-// const characters = [];
-
-/*자바스크립트 if문을 활용해 특정 캐릭터 버튼을 누르면 특정
-캐릭터의 div class="profileInfo"안의 내용을 출력하는 function
-만들기?*/
-
-// openButton.addEventListener('hover', () => {
-//     .character
-// })
-const infos = [
+const memberinfos = [
   {
     name: "김지윤",
     mbti: "ESTP",
@@ -62,23 +53,21 @@ const infos = [
   },
 ];
 
-openButton.forEach(function (button, i) {
+characters.forEach(function (button, i) {
   button.addEventListener("click", function () {
     container.classList.remove("displaynone");
-    closeButton.classList.remove("displaynone");
 
-    modalContent.innerHTML = `안녕하세요! 저는 <span class="bigSize" id="highlight">${infos[i].name}</span>입니다.<br />
-        저의 MBTI는 <span class="bigSize">${infos[i].mbti}</span> 입니다.<br />
-        저의 취미는 <span class="bigSize">${infos[i].hobby}</span>이고, 특기는 <span class="bigSize">${infos[i].spec}</span> 입니다.<br />
-        <span class="bigSize">${infos[i].like}</span>을(를) 좋아하고, 좋아하는 색깔은 <span class="bigSize">${infos[i].color}</span>입니다.`;
+    modalContent.innerHTML = `안녕하세요! 저는 <span class="bigSize highlight">${memberinfos[i].name}</span>입니다.<br />
+        저의 MBTI는 <span class="bigSize">${memberinfos[i].mbti}</span> 입니다.<br />
+        저의 취미는 <span class="bigSize">${memberinfos[i].hobby}</span>이고, 특기는 <span class="bigSize">${memberinfos[i].spec}</span> 입니다.<br />
+        <span class="bigSize">${memberinfos[i].like}</span>을(를) 좋아하고, 좋아하는 색깔은 <span class="bigSize">${memberinfos[i].color}</span>입니다.`;
 
-    blogLink.href = infos[i].github || "#";
-    velogLinks.href = infos[i].velog || "#";
-    profileImg.src = infos[i].Img || "#";
+    blogLinks.href = memberinfos[i].github || "#";
+    velogLinks.href = memberinfos[i].velog || "#";
+    profileImg.src = memberinfos[i].Img || "#";
   });
 });
 
 closeButton.addEventListener("click", function () {
-  closeButton.classList.add("displaynone");
   container.classList.add("displaynone");
 });
