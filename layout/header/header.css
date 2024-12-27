@@ -6,7 +6,7 @@ body {
 }
 
 .header {
-    width: 100vW;
+    width: 100vw;
     /* 가로로 화면 꽉채우기 */
     background: white;
     border-bottom: solid 1px #5F5959;
@@ -51,9 +51,16 @@ a {
 
     display: flex;
     /* 요소를 block으로 바꿔줌 */
-    flex-direction: row;
-    /* 가로 좌측정렬 */
     align-items: center;
     /* 요소 중앙정렬 */
     width: 100%;
+}
+
+li {
+    cursor: pointer;
+}
+
+.underline {
+    color: #5588C6;
+    text-decoration: underline;
 }

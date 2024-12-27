@@ -9,17 +9,23 @@
 </head>
 
 <body>
+
     <header class="header">
         <div class="headerTop">
             <h1>
                 <img src="../../public/logo.png" class="headerLogo">
+                <audio controls loop src="../../public/짱구.mp3"></audio>
+                    <div>
+                        <button onclick="document.getElementById('player').play()">재생</button>
+                        <button onclick="document.getElementById('player').pause()">정지</button>
+                    </div>
             </h1>
         </div>
         <div class="headerBottom">
             <ul class="nav">
-                <li><a href="../../index.html">내배캠 방범대</a></li>
-                <li><a href="../../member/member.html">방범대원 소개</a></li>
-                <li><a href="../../guestbook/guestbook.html">방범 일지</a></li>
+                <li class="navTeam"><a href="../../member/home.html">내배캠 방범대</a></li>
+                <li class="navMember"><a href="../../member/member.html">방범대원 소개</a></li>
+                <li class="navGuestbook"><a href="../../guestbook/guestbook.html">방범 일지</a></li>
             </ul>
         </div>
     </header>
@@ -27,3 +33,10 @@
 <script src="header.js"></script>
 
 </html>
+
+
+<!--
+<a href="../../member/home.html"></a>
+<a href="../../member/member.html"></a>
+<a href="../../guestbook/guestbook.html"></a>
+-->
