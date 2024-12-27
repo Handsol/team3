@@ -27,13 +27,11 @@ class CustomHeader extends HTMLElement {
     `;
   }
   afterLogic() {
-    //이한솔
     const currentPage = window.location.pathname.split("/").pop();
     const menuItems = document.querySelectorAll(".nav li a");
 
     menuItems.forEach((item) => {
       const menuPage = item.getAttribute("href").split("/").pop();
-      console.log(menuPage);
 
       if (menuPage === currentPage) {
         item.classList.add("underline");
