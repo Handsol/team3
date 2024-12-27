@@ -33,6 +33,7 @@ a {
 
 .headerBottom {
     height: 100px;
+    position: relative;
 }
 
 .headerBottom .nav {
@@ -63,4 +64,11 @@ li {
 .underline {
     color: #5588C6;
     text-decoration: underline;
+}
+
+.audio {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
 }

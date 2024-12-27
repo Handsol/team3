@@ -13,7 +13,6 @@ class CustomHeader extends HTMLElement {
         <div class="headerTop">
             <h1>
                 <img src="../../public/logo.png" class="headerLogo">
-                <audio controls loop src="../../public/짱구.mp3">
             </h1>
         </div>
         <div class="headerBottom">
@@ -22,6 +21,7 @@ class CustomHeader extends HTMLElement {
                 <li><a href="../../member/member.html">방범대원 소개</a></li>
                 <li><a href="../../guestbook/guestbook.html">방범 일지</a></li>
             </ul>
+            <audio class="audio" controls loop src="../../public/bgm.mp3">
         </div>
       </header>
     `;
