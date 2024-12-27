@@ -57,7 +57,7 @@ a {
     width: 100%;
 }
 
-li {
+.nav li {
     cursor: pointer;
 }
 
