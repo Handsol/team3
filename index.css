@@ -2,7 +2,7 @@
 
 html {
   background-color: var(--main-yellow);
-  background-image: url("public/backgroundPattern.png");
+  background-image: url("public/background/zzangguPattern.png");
   background-blend-mode: overlay;
   background-size: cover;
   height: 100%;

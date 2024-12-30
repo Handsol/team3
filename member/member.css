@@ -25,7 +25,7 @@
   position: relative;
   width: 100%;
   min-height: 800px;
-  background: url("../public/background/jjangguHouse.png") center bottom/cover
+  background: url("../public/background/zzangguHouse.png") center bottom/cover
     no-repeat;
   overflow: hidden;
 }
@@ -191,7 +191,7 @@
   transform: translateX(-50%);
   width: 60px;
   height: 60px;
-  background: url(../public/hover-image.png) no-repeat 0 0 / contain;
+  background: url(../public/icon/speechBubble.png) no-repeat 0 0 / contain;
   opacity: 50%;
 }
 /* hover 시 노출 */
