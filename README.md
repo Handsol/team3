@@ -114,7 +114,7 @@
 ## 📃 프로젝트 기록
 
 #### [<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" /> 피그마 Link](https://www.figma.com/design/7mrFqF3eRnKzITdRJWuiBz/%EB%82%B4%EB%B0%B0%EC%BA%A0---3%EC%A1%B0%EB%8A%94-%EB%AA%BB%EB%A7%90%EB%A0%A4?node-id=0-1&p=f&t=6LXj0ldVBzZN1xTA-0)
-#### [<img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white" alt="Notion" /> 노션 Link](https://www.notion.so/03-3-165d2bdba92980cc9099e3a39d0d799f)
+#### [<img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white" alt="Notion" /> 노션 Link](https://www.notion.so/teamsparta/03-431c7d5c407145d2b272b436f8f985c4)
 #### 배포된 링크 : [https://handsol.github.io/team3/](https://handsol.github.io/team3/)
 #### KPT 회고 : [https://github.com/Handsol/team3/wiki/KPT-회고](https://github.com/Handsol/team3/wiki/KPT-%ED%9A%8C%EA%B3%A0)
 
