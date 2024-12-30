@@ -1,4 +1,4 @@
-![프로젝트 로고](https://github.com/user-attachments/assets/747b5eec-96b0-4e20-84f1-05b2885b55e6)
+[![프로젝트 로고](https://github.com/user-attachments/assets/747b5eec-96b0-4e20-84f1-05b2885b55e6)](https://handsol.github.io/team3/)
 
 ## 💬 프로젝트 소개
 **캠프 하차를 막는 내배캠 방범대 😎 우리 팀원들을 소개합니다!** <br>
@@ -113,5 +113,5 @@
 
 #### [<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" /> 피그마 Link](https://www.figma.com/design/7mrFqF3eRnKzITdRJWuiBz/%EB%82%B4%EB%B0%B0%EC%BA%A0---3%EC%A1%B0%EB%8A%94-%EB%AA%BB%EB%A7%90%EB%A0%A4?node-id=0-1&p=f&t=6LXj0ldVBzZN1xTA-0)
 #### [<img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white" alt="Notion" /> 노션 Link](https://www.notion.so/03-3-165d2bdba92980cc9099e3a39d0d799f)
-
+#### 배포된 링크 : [https://handsol.github.io/team3/](https://handsol.github.io/team3/)
 
