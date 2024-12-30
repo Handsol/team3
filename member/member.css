@@ -85,8 +85,11 @@
 .closeBtn {
   position: absolute;
   right: 55px;
-  cursor: pointer;
   display: block;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
   width: 24px;
   height: 24px;
 }

@@ -1,43 +1,45 @@
 @import url(../../global.css);
 
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 footer {
-    width: 100vw;
-    background-color: #484747;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}   /* position: fixed 삭제 - 하단에 계속 고정시킬 것이 아니기 때문에 필요 없음 */
+  width: 100vw;
+  background-color: #484747;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} /* position: fixed 삭제 - 하단에 계속 고정시킬 것이 아니기 때문에 필요 없음 */
 
 .footerTop {
-    display: flex;
-    align-items: center;
-    border-bottom: solid 1px #333333;
-    justify-content: space-between;
-    width: 1260px;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #333333;
+  justify-content: space-between;
+  width: 1260px;
+  padding: 20px;
 }
 
 .footerLogo {
-    width: 250px;
-    filter: grayscale(100%);
+  width: 250px;
+  filter: grayscale(100%);
 }
 
 .link {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.link img {
+  width: 30px;
 }
 
 .footerBottom {
-    display: flex;
-    width: 1260px;
-    color: #939393;
+  display: flex;
+  width: 1260px;
+  color: #939393;
 }
-
-
