@@ -25,7 +25,8 @@
   position: relative;
   width: 100%;
   min-height: 800px;
-  background: url("../public/짱구집.png") center bottom/cover no-repeat;
+  background: url("../public/background/jjangguHouse.png") center bottom/cover
+    no-repeat;
   overflow: hidden;
 }
 
