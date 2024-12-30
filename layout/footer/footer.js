@@ -12,8 +12,8 @@ class CustomFooter extends HTMLElement {
             <div class="footerTop">
                 <img src="./public/logo.png" class="footerLogo">
                 <div class="link">
-                    <a href="https://github.com/Handsol/team3.git"><img src="./public/Vector.png"></a>
-                    <a href="https://teamsparta.notion.site/03-431c7d5c407145d2b272b436f8f985c4"><img src="./public/notion-icon 1.png"></a>
+                    <a href="https://github.com/Handsol/team3.git"><img src="./public/icon/githubBlack.png"></a>
+                    <a href="https://teamsparta.notion.site/03-431c7d5c407145d2b272b436f8f985c4"><img src="./public/icon/notion.png"></a>
                 </div>
             </div>
             <div class="footerBottom">

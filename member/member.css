@@ -25,7 +25,8 @@
   position: relative;
   width: 100%;
   min-height: 800px;
-  background: url("../public/짱구집.png") center bottom/cover no-repeat;
+  background: url("../public/background/zzangguHouse.png") center bottom/cover
+    no-repeat;
   overflow: hidden;
 }
 
@@ -84,8 +85,11 @@
 .closeBtn {
   position: absolute;
   right: 55px;
-  cursor: pointer;
   display: block;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
   width: 24px;
   height: 24px;
 }
@@ -190,7 +194,7 @@
   transform: translateX(-50%);
   width: 60px;
   height: 60px;
-  background: url(../public/hover-image.png) no-repeat 0 0 / contain;
+  background: url(../public/icon/speechBubble.png) no-repeat 0 0 / contain;
   opacity: 50%;
 }
 /* hover 시 노출 */
