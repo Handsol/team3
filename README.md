@@ -88,7 +88,7 @@
 #### [[방명록] 작성된 글이 있는데도 '작성된 글이 없습니다.' 텍스트가 뜬다고?](https://github.com/Handsol/team3/wiki/%5B%EB%B0%A9%EB%AA%85%EB%A1%9D%5D-%EC%9E%91%EC%84%B1%EB%90%9C-%EA%B8%80%EC%9D%B4-%EC%9E%88%EB%8A%94%EB%8D%B0%EB%8F%84-%E2%80%98%EC%9E%91%EC%84%B1%EB%90%9C-%EA%B8%80%EC%9D%B4-%EC%97%86%EC%8A%B5%EB%8B%88%EB%8B%A4.%E2%80%99-%ED%85%8D%EC%8A%A4%ED%8A%B8%EA%B0%80-%EB%9C%AC%EB%8B%A4%EA%B3%A0%3F)
 #### [[컴포넌트] JS에서 컴포넌트 사용하기 + 2가지의 에러 사항](https://github.com/Handsol/team3/wiki/%5B%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%5D-JS%EC%97%90%EC%84%9C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0---2%EA%B0%80%EC%A7%80%EC%9D%98-%EC%97%90%EB%9F%AC-%EC%82%AC%ED%95%AD)
 #### [[컴포넌트] 자바스크립트 모듈화에서 CORS 발생](https://github.com/Handsol/team3/wiki/%5B%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%5D-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%AA%A8%EB%93%88%ED%99%94%EC%97%90%EC%84%9C-CORS-%EB%B0%9C%EC%83%9D)
-
+#### [[멤버] 멤버별 캐릭터 머리 위에 :hover 용 말풍선이 안 띄워져!] (https://github.com/Handsol/team3/wiki/%5B%EB%A9%A4%EB%B2%84%5D-%EB%A9%A4%EB%B2%84%EB%B3%84-%EC%BA%90%EB%A6%AD%ED%84%B0-%EB%A8%B8%EB%A6%AC-%EC%9C%84%EC%97%90-:hover-%EC%9A%A9-%EB%A7%90%ED%92%8D%EC%84%A0-%EB%9D%84%EC%9A%B0%EA%B8%B0)
 <br />
 
 ## 📁 프로젝트 구조
